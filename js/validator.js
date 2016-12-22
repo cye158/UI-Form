@@ -90,7 +90,9 @@ $(document).ready(function() {
       },
       terms: {
         validators: {
-          notEmpty: {
+          choice: {
+            min: 1,
+            max: 1,
             message: 'Please indicate that you have read and agree to the Terms and Conditions'
           }
         }
@@ -101,7 +103,7 @@ $(document).ready(function() {
 
   .on('success.form.bv', function(e) {
     $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-    $('#reg_form').data('bootstrapValidator').resetForm();
+    $('#form').data('bootstrapValidator').resetForm();
 
     // Prevent form submission
     e.preventDefault();
