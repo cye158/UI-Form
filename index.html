@@ -257,18 +257,7 @@
 									<label class="col-md-4 control-label">Additional details: </label>
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group">
-											<textarea class="form-control" name="comment" placeholder="Enter short summary of issue (max 200 characters)."  maxlength="200" size="3" value="200" id="counter"onkeyup="textCounter(this,'counter',10);"></textarea>
-											<script>
-											textCounter(field,field2,maxlimit) {
-												var countfield = document.getElementById(field2);
-												if ( field.value.length > maxlimit) {
-													field.value = field.value.substring(0, maxlimit);
-													return false;
-												} else {
-													countfield.value = maxlimit - field.value.length;
-												}
-											}
-											</script>
+											<textarea class="form-control" name="comment" placeholder="Enter short summary of issue (max 200 characters)."  maxlength="200"></textarea>
 										</div>
 									</div>
 								</div>
@@ -282,6 +271,20 @@
 										<div class="input-group">
 											<input type='file' id="img-upload"/>
 											<img  alt="your image" />
+											<script>  function readURL(input) {
+											       if (input.files && input.files[0]) {
+											           var reader = new FileReader();
+
+											           reader.onload = function (e) {
+											               $('#blah')
+											                   .attr('src', e.target.result)
+											                   .width(150)
+											                   .height(200);
+											           };
+
+											           reader.readAsDataURL(input.files[0]);
+											       }
+											   }</script>
 										</div>
 									</div>
 								</div>
