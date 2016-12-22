@@ -23,3 +23,8 @@ body {
 textarea #comment {
   resize: vertical !important;
 }
+
+.dateContainer .form-control-feedback {
+    top: 0;
+    right: -15px;
+}

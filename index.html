@@ -229,16 +229,28 @@
 
 						</fieldset>
 
-						<legend style="margin-top: 10px;border-top: 2.5px solid grey;">Details about the Issue <i class="glyphicon glyphicon-pen"></i></legend>
+						<legend style="margin-top: 10px;border-top: 2.5px solid grey;">Details about the Issue <i class="glyphicon glyphicon-pencil"></i></legend>
 						<fieldset>
 
-							<!-- Issue -->
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="col-xs-3 control-label">Date & Time:</label>
+									<div class="col-xs-6 dateContainer">
+										<div class="input-group date" id="datetimePicker">
+											<input type="text" class="form-control" name="issue_date" placeholder="MM/DD/YYYY h:m A" />
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Issue Type -->
 							<div class="col-md-6">
 								<div class="form-group">
 									<label class="col-md-4 control-label">Type of Issue:</label>
 									<div class="col-md-7 selectContainer">
 										<div class="input-group">
-											<select name="gender" class="form-control selectpicker">
+											<select name="issue_type" class="form-control selectpicker">
 												<option value=" ">Select an issue </option>
 												<option>Spillage</option>
 												<option>Broken pipe</option>
@@ -272,19 +284,19 @@
 											<input type='file' id="img-upload"/>
 											<img  alt="your image" />
 											<script>  function readURL(input) {
-											       if (input.files && input.files[0]) {
-											           var reader = new FileReader();
+												if (input.files && input.files[0]) {
+													var reader = new FileReader();
 
-											           reader.onload = function (e) {
-											               $('#blah')
-											                   .attr('src', e.target.result)
-											                   .width(150)
-											                   .height(200);
-											           };
+													reader.onload = function (e) {
+														$('#blah')
+														.attr('src', e.target.result)
+														.width(150)
+														.height(200);
+													};
 
-											           reader.readAsDataURL(input.files[0]);
-											       }
-											   }</script>
+													reader.readAsDataURL(input.files[0]);
+												}
+											}</script>
 										</div>
 									</div>
 								</div>
