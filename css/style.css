@@ -1,0 +1,13 @@
+#success_message{ display: none;}
+
+.input-group-addon {
+  width: 7% !important;
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+  right: -5px !important;
+}
+
+.input-group {
+  display: block !important;
+}

@@ -1,0 +1,296 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![ENDif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![ENDif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![ENDif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![ENDif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		SFSU CS Department
+		-
+		CSC 642 Fall 2016 project:
+		Form UI
+		Clarence Y. Enriquez
+		cye0105@mail.sfsu.edu
+	</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<!-- container -->
+	<div class="container">
+		<div class="col-md-12">
+			<h3 style="font-weight:bolder; font-size: 25px; text-align:center;">Please Record the Problem by Filling the Form Below</h3>
+
+			<div class="col-md-12">
+				<hr>
+				<form class="form-horizontal" action=" " method="post" id="form">
+					<!-- Form Name -->
+					<div style="border: 5px solid grey; padding: 7.5px;">
+					<legend style="margin-top: 0px;">Personal Information <i class="glyphicon glyphicon-user"></i></legend>
+					<fieldset>
+
+						<!-- First Name -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label">First Name:</label>
+								<div class="col-md-7 inputGroupContainer">
+									<div class="input-group">
+										<input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Last Name -->
+						<div class="col-md-6"	>
+							<div class="form-group">
+								<label class="col-md-4 control-label">Last Name:</label>
+								<div class="col-md-7 inputGroupContainer">
+									<div class="input-group">
+										<input name="last_name" placeholder="Last Name" class="form-control" type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Select Gender -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label">Gender:</label>
+								<div class="col-md-7 selectContainer">
+									<div class="input-group">
+										<select name="gender" class="form-control selectpicker">
+											<option value=" ">Select your gender </option>
+											<option>Male</option>
+											<option>Female</option>
+											<option>Other</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Education -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label">Education:</label>
+								<div class="col-md-7 selectContainer">
+									<div class="input-group">
+										<select name="gender" class="form-control selectpicker">
+											<option value=" ">Select your Highest Education</option>
+											<option>Spillage</option>
+											<option>Broken pipe</option>
+											<option>Electric hazard</option>
+											<option>Broken pathway</option>
+											<option>Other</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Phone -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label">Phone #:</label>
+								<div class="col-md-7 inputGroupContainer">
+									<div class="input-group">
+										<input name="phone" placeholder="(555) 555-5555" class="form-control" type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Email -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label">E-Mail:</label>
+								<div class="col-md-7 inputGroupContainer">
+									<div class="input-group">
+										<input name="email" placeholder="mail@domain.com" class="form-control" type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+
+
+					<legend style="margin-top: 10px;border-top: 2.5px solid grey;">Location of Issue <i class="glyphicon glyphicon-map-marker"></i></legend>
+					<fieldset>
+
+						<!-- St Address -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label">Address:</label>
+								<div class="col-md-7 inputGroupContainer">
+									<div class="input-group">
+										<input name="address" placeholder="Street Address" class="form-control" type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- City -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label">City:</label>
+								<div class="col-md-7 inputGroupContainer">
+									<div class="input-group">
+										<input name="city" placeholder="City" class="form-control"  type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- State -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label">State:</label>
+								<div class="col-md-7 selectContainer">
+									<div class="input-group">
+										<select name="state" class="form-control selectpicker">
+											<option value=" ">Select the state </option>
+											<option>Alabama</option>
+											<option>Alaska</option>
+											<option>Arizona</option>
+											<option>Arkansas</option>
+											<option>California</option>
+											<option>Colorado</option>
+											<option>Connecticut</option>
+											<option>Delaware</option>
+											<option>District of Columbia</option>
+											<option>Florida</option>
+											<option>Georgia</option>
+											<option>Hawaii</option>
+											<option>Idaho</option>
+											<option>Illinois</option>
+											<option>Indiana</option>
+											<option>Iowa</option>
+											<option>Kansas</option>
+											<option>Kentucky</option>
+											<option>Louisiana</option>
+											<option>Maine</option>
+											<option>Maryland</option>
+											<option>Mass</option>
+											<option>Michigan</option>
+											<option>Minnesota</option>
+											<option>Mississippi</option>
+											<option>Missouri</option>
+											<option>Montana</option>
+											<option>Nebraska</option>
+											<option>Nevada</option>
+											<option>New Hampshire</option>
+											<option>New Jersey</option>
+											<option>New Mexico</option>
+											<option>New York</option>
+											<option>North Carolina</option>
+											<option>North Dakota</option>
+											<option>Ohio</option>
+											<option>Oklahoma</option>
+											<option>Oregon</option>
+											<option>Pennsylvania</option>
+											<option>Rhode Island</option>
+											<option>South Carolina</option>
+											<option>South Dakota</option>
+											<option>Tennessee</option>
+											<option>Texas</option>
+											<option>Utah</option>
+											<option>Vermont</option>
+											<option>Virginia</option>
+											<option>Washington</option>
+											<option>West Virginia</option>
+											<option>Wisconsin</option>
+											<option>Wyoming</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Zip -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label">Zip Code:</label>
+								<div class="col-md-7 inputGroupContainer">
+									<div class="input-group">
+										<input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+
+					<legend style="margin-top: 10px;border-top: 2.5px solid grey;">Issue Details <i class="glyphicon glyphicon-exclamation-sign"></i></legend>
+					<fieldset>
+
+						<!-- Issue -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label">Type of Issue:</label>
+								<div class="col-md-7 selectContainer">
+									<div class="input-group">
+										<select name="gender" class="form-control selectpicker">
+											<option value=" ">Select an issue </option>
+											<option>Spillage</option>
+											<option>Broken pipe</option>
+											<option>Electric hazard</option>
+											<option>Broken pathway</option>
+											<option>Other</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Comment -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label">Additional details: </label>
+								<div class="col-md-7 inputGroupContainer">
+									<div class="input-group">
+										<textarea class="form-control" name="comment" placeholder="Enter short summary of issue"  id="counter" onkeyup="textCounter(this,'counter',10);"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+				</div>
+				<hr>
+
+					<!-- Button -->
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-md-4 control-label"></label>
+							<div class="col-md-6">
+								<button type="submit" class="btn btn-primary">
+									Submit
+									<span class="glyphicon glyphicon-send"></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- /.container -->
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+	<script type="text/javascript" src="js/validator.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
