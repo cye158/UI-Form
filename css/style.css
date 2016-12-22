@@ -24,7 +24,7 @@ body {
   background-color: #eee !important;
 }
 
-textarea #comment {
+#comment {
   resize: vertical !important;
 }
 
