@@ -257,7 +257,7 @@
 									<label class="col-md-4 control-label">Additional details: </label>
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group">
-											<textarea class="form-control" name="comment" placeholder="Enter short summary of issue (max 200 characters)." disabled  maxlength="3" size="3" value="200" id="counter"onkeyup="textCounter(this,'counter',10);"></textarea>
+											<textarea class="form-control" name="comment" placeholder="Enter short summary of issue (max 200 characters)."  maxlength="3" size="3" value="200" id="counter"onkeyup="textCounter(this,'counter',10);"></textarea>
 											<script>
 											textCounter(field,field2,maxlimit) {
 												var countfield = document.getElementById(field2);
@@ -273,21 +273,21 @@
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- Zip -->
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="col-md-4 control-label">Upload Image: </label>
-								<div class="col-md-7 inputGroupContainer">
-									<div class="input-group">
-										<input type='file' onchange="readURL(this);" />
-										<img id="issue_img" alt="your image" />
+
+							<!-- Image -->
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="col-md-4 control-label">Upload Image: </label>
+									<div class="col-md-7 inputGroupContainer">
+										<div class="input-group">
+											<input type='file' onchange="readURL(this);" />
+											<img id="issue_img" alt="your image" />
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
 					</fieldset>
 					<hr>
 
