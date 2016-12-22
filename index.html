@@ -20,6 +20,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -247,11 +248,11 @@
 							<!-- Issue Type -->
 							<div class="col-md-6">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Type of Issue:</label>
+									<label class="col-md-4 control-label">Category of Issue:</label>
 									<div class="col-md-7 selectContainer">
 										<div class="input-group">
 											<select name="issue_type" class="form-control selectpicker">
-												<option value=" ">Select an issue </option>
+												<option value=" ">Select the issue </option>
 												<option>Spillage</option>
 												<option>Broken pipe</option>
 												<option>Electric hazard</option>
@@ -281,22 +282,8 @@
 									<label class="col-md-4 control-label">Upload Image: </label>
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group">
-											<input type='file' id="img-upload"/>
-											<img/>
-											<script>  function readURL(input) {
-												if (input.files && input.files[0]) {
-													var reader = new FileReader();
-
-													reader.onload = function (e) {
-														$('#blah')
-														.attr('src', e.target.result)
-														.width(150)
-														.height(200);
-													};
-
-													reader.readAsDataURL(input.files[0]);
-												}
-											}</script>
+											<input type='file' onchange="readURL(this);" />
+										  <img id="issue_img" />
 										</div>
 									</div>
 								</div>
@@ -342,6 +329,7 @@
 	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
 	<script type="text/javascript" src="js/validator.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
 
 </body>
 </html>
