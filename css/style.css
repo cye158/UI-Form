@@ -26,6 +26,7 @@ body {
 
 #comment {
   resize: vertical !important;
+  max-height: 300px !important;
 }
 
 .dateContainer .form-control-feedback {
