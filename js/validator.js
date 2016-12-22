@@ -88,6 +88,13 @@ $(document).ready(function() {
           }
         }
       },
+      terms: {
+        validators: {
+          notEmpty: {
+            message: 'Please indicate that you have read and agree to the Terms and Conditions'
+          }
+        }
+      },
     }
   })
 
