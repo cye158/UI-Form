@@ -28,7 +28,6 @@ $(document).ready(function() {
           }
         }
       },
-
       phone: {
         validators: {
           notEmpty: {
@@ -93,7 +92,7 @@ $(document).ready(function() {
           choice: {
             min: 1,
             max: 1,
-            message: 'Please indicate that you have read and agree to the Terms and Conditions'
+            message: 'Please check that you have read and agree to the Terms and Conditions'
           }
         }
       },
@@ -133,6 +132,6 @@ $(document).ready(function() {
 
            reader.readAsDataURL(input.files[0]);
        }
-   };
+   }
 
 });
