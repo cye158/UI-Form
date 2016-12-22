@@ -89,8 +89,9 @@ $(document).ready(function() {
       },
       issue_date: {
         validators: {
-          notEmpty: {
-            message: 'Please select the date & time'
+          date: {
+            format: 'DD/MM/YYYY',
+            message: 'The value is not a valid date'
           }
         }
       },
@@ -125,32 +126,6 @@ $(document).ready(function() {
   })
 
 
-  $('#datetimePicker').datetimepicker();
-
-  $('#meetingForm').formValidation({
-      framework: 'bootstrap',
-      icon: {
-          valid: 'glyphicon glyphicon-ok',
-          invalid: 'glyphicon glyphicon-remove',
-          validating: 'glyphicon glyphicon-refresh'
-      },
-      fields: {
-          meeting: {
-              validators: {
-                  date: {
-                      format: 'MM/DD/YYYY h:m A',
-                      message: 'The value is not a valid date'
-                  }
-              }
-          }
-      }
-  });
-
-  $('#datetimePicker').on('dp.change dp.show', function(e) {
-      $('#meetingForm').formValidation('revalidateField', 'meeting');
-  });
-
-
   .on('success.form.bv', function(e) {
     $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
     $('#form').data('bootstrapValidator').resetForm();
@@ -172,18 +147,18 @@ $(document).ready(function() {
 
 
   function readURL(input) {
-       if (input.files && input.files[0]) {
-           var reader = new FileReader();
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
 
-           reader.onload = function (e) {
-               $('#blah')
-                   .attr('src', e.target.result)
-                   .width(150)
-                   .height(200);
-           };
+      reader.onload = function (e) {
+        $('#blah')
+        .attr('src', e.target.result)
+        .width(150)
+        .height(200);
+      };
 
-           reader.readAsDataURL(input.files[0]);
-       }
-   }
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
 
 });

@@ -232,13 +232,13 @@
 						<legend style="margin-top: 10px;border-top: 2.5px solid grey;">Details about the Issue <i class="glyphicon glyphicon-pencil"></i></legend>
 						<fieldset>
 
+							<!-- Zip -->
 							<div class="col-md-6">
 								<div class="form-group">
-									<label class="col-xs-3 control-label">Date & Time:</label>
-									<div class="col-xs-6 dateContainer">
-										<div class="input-group date" id="datetimePicker">
-											<input type="text" class="form-control" name="issue_date" placeholder="MM/DD/YYYY h:m A" />
-											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+									<label class="col-md-4 control-label">Date:</label>
+									<div class="col-md-7 inputGroupContainer">
+										<div class="input-group">
+											<input name="issue_date" placeholder="DD/MM/YYYY" class="form-control" type="text">
 										</div>
 									</div>
 								</div>
@@ -282,7 +282,7 @@
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group">
 											<input type='file' id="img-upload"/>
-											<img  alt="your image" />
+											<img/>
 											<script>  function readURL(input) {
 												if (input.files && input.files[0]) {
 													var reader = new FileReader();
