@@ -5,9 +5,21 @@
 }
 
 .form-horizontal .has-feedback .form-control-feedback {
-  right: -10px !important;
+  right: 5px !important;
 }
 
 .input-group {
   display: block !important;
+}
+
+legend {
+    border-bottom: 1px dotted #888 !important;
+}
+
+body {
+  background-color: #eee !important;
+}
+
+textarea #comment {
+  resize: vertical !important;
 }
