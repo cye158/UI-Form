@@ -281,8 +281,8 @@
 									<label class="col-md-4 control-label">Upload Image: </label>
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group">
-											<input type='file' onchange="readURL(this);" />
-											<img id="issue_img" alt="your image" />
+											<input type='file' id="img-upload"/>
+											<img  alt="your image" />
 										</div>
 									</div>
 								</div>
@@ -292,10 +292,8 @@
 					<hr>
 
 					<!-- Button -->
-					<fieldset action="#" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
-
+					<fieldset action="#">
 						<input type="checkbox" name="terms" value="check" id="agree" /> I have read and agree to the Terms and Conditions and Privacy Policy
-
 					</fieldset>
 
 					<div class="col-md-6">
