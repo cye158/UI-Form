@@ -257,7 +257,8 @@
 								<label class="col-md-4 control-label">Additional details: </label>
 								<div class="col-md-7 inputGroupContainer">
 									<div class="input-group">
-										<textarea class="form-control" name="comment" placeholder="Enter short summary of issue (max 200 characters)"  id="counter" onkeyup="textCounter(this,'counter',200);"></textarea>
+										<input disabled  maxlength="3" size="3" value="10" id="counter">
+										<textarea class="form-control" name="comment" placeholder="Enter short summary of issue (max 200 characters)." onkeyup="textCounter(this,'counter',10);"></textarea>
 									</div>
 								</div>
 							</div>
