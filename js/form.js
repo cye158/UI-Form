@@ -128,7 +128,7 @@ $(document).ready(function() {
 
   .on('success.form.bv', function(e) {
     $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-    $('#form').data('bootstrapValidator').resetForm();
+    $('#form').data('bootstrapValidator').resetForm(true);
 
     // Prevent form submission
     e.preventDefault();
@@ -145,20 +145,22 @@ $(document).ready(function() {
     }, 'json');
   });
 
+  $('#clear').data('bootstrapValidator').resetForm(true);
 
-  function readURL(input) {
+
+  $('#issue_img').onchange(function readURL(input) {
          if (input.files && input.files[0]) {
              var reader = new FileReader();
 
              reader.onload = function (e) {
                  $('#issue_img')
                      .attr('src', e.target.result)
-                     .width(150)
-                     .height(200);
+                     .width(250)
+                     .height(250);
              };
 
              reader.readAsDataURL(input.files[0]);
-         }
+         });
      }
 
 });
