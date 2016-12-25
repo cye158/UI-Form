@@ -147,7 +147,6 @@ $(document).ready(function() {
 
   $('#clear').data('bootstrapValidator').resetForm(true);
 
-
   $('#issue_img').onchange(function readURL(input) {
          if (input.files && input.files[0]) {
              var reader = new FileReader();

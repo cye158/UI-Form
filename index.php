@@ -25,9 +25,9 @@
 
 <body>
 	<!-- container -->
-	<div class="container">
+	<div class="container" style="min-width: 350px;">
 		<div class="col-md-12">
-			<h3 style="font-weight:bolder; font-size: 25px; text-align:center;">Please Record the Problem by Filling the Form Below</h3>
+			<h3 style="font-weight:bolder; font-size:25px; text-align:center;">Please Record the Problem by Filling the Form Below</h3>
 
 			<div class="col-md-12">
 				<hr>
@@ -69,9 +69,9 @@
 										<div class="input-group">
 											<select name="gender" class="form-control selectpicker">
 												<option value=" ">Select your gender </option>
-												<option>Male</option>
-												<option>Female</option>
-												<option>Other</option>
+												<option value="Male">Male</option>
+												<option value="Female">Female</option>
+												<option value="Other">Other</option>
 											</select>
 										</div>
 									</div>
@@ -86,11 +86,12 @@
 										<div class="input-group">
 											<select name="gender" class="form-control selectpicker">
 												<option value=" ">Select your Highest Education</option>
-												<option>High School Diploma</option>
-												<option>Bachelor's Degree</option>
-												<option>Master's Degree</option>
-												<option>Ph.D. Degree</option>
-												<option>None</option>
+												<option value="GED">General Educational Development(GED)</option>
+												<option value="High School Diploma">High School Diploma</option>
+												<option value="Bachelor's Degree">Bachelor's Degree</option>
+												<option value="Master's Degree">Master's Degree</option>
+												<option value="Ph.D. Degree">Ph.D. Degree</option>``
+												<option value="None">None</option>
 											</select>
 										</div>
 									</div>
@@ -124,7 +125,7 @@
 						</fieldset>
 
 
-						<legend style="margin-top: 10px;border-top: 2.5px solid grey;">Location of Issue <i class="glyphicon glyphicon-map-marker"></i></legend>
+						<legend style="margin-top: 10px;border-top: 2.5px solid grey;">Location of the Issue <i class="glyphicon glyphicon-map-marker"></i></legend>
 						<fieldset>
 
 							<!-- St Address -->
@@ -158,58 +159,58 @@
 									<div class="col-md-7 selectContainer">
 										<div class="input-group">
 											<select name="state" class="form-control selectpicker">
-												<option value=" ">Select the state </option>
-												<option>Alabama</option>
-												<option>Alaska</option>
-												<option>Arizona</option>
-												<option>Arkansas</option>
-												<option>California</option>
-												<option>Colorado</option>
-												<option>Connecticut</option>
-												<option>Delaware</option>
-												<option>District of Columbia</option>
-												<option>Florida</option>
-												<option>Georgia</option>
-												<option>Hawaii</option>
-												<option>Idaho</option>
-												<option>Illinois</option>
-												<option>Indiana</option>
-												<option>Iowa</option>
-												<option>Kansas</option>
-												<option>Kentucky</option>
-												<option>Louisiana</option>
-												<option>Maine</option>
-												<option>Maryland</option>
-												<option>Mass</option>
-												<option>Michigan</option>
-												<option>Minnesota</option>
-												<option>Mississippi</option>
-												<option>Missouri</option>
-												<option>Montana</option>
-												<option>Nebraska</option>
-												<option>Nevada</option>
-												<option>New Hampshire</option>
-												<option>New Jersey</option>
-												<option>New Mexico</option>
-												<option>New York</option>
-												<option>North Carolina</option>
-												<option>North Dakota</option>
-												<option>Ohio</option>
-												<option>Oklahoma</option>
-												<option>Oregon</option>
-												<option>Pennsylvania</option>
-												<option>Rhode Island</option>
-												<option>South Carolina</option>
-												<option>South Dakota</option>
-												<option>Tennessee</option>
-												<option>Texas</option>
-												<option>Utah</option>
-												<option>Vermont</option>
-												<option>Virginia</option>
-												<option>Washington</option>
-												<option>West Virginia</option>
-												<option>Wisconsin</option>
-												<option>Wyoming</option>
+												<option value=" ">Select the state</option>
+												<option value="AL">Alabama</option>
+												<option value="ak">Alaska</option>
+												<option value="AZ">Arizona</option>
+												<option value="AR">Arkansas</option>
+												<option value="CA">California</option>
+												<option value="CO">Colorado</option>
+												<option value="CT">Connecticut</option>
+												<option value="DE">Delaware</option>
+												<option value="DC">District of Columbia</option>
+												<option value="FL">Florida</option>
+												<option value="GA">Georgia</option>
+												<option value="HI">Hawaii</option>
+												<option value="ID">Idaho</option>
+												<option value="IL">Illinois</option>
+												<option value="IN">Indiana</option>
+												<option value="IA">Iowa</option>
+												<option value="KS">Kansas</option>
+												<option value="KY">Kentucky</option>
+												<option value="LA">Louisiana</option>
+												<option value="ME">Maine</option>
+												<option value="MD">Maryland</option>
+												<option value="MA">Massachusetts</option>
+												<option value="MI">Michigan</option>
+												<option value="MN">Minnesota</option>
+												<option value="MS">Mississippi</option>
+												<option value="MO">Missouri</option>
+												<option value="MT">Montana</option>
+												<option value="NE">Nebraska</option>
+												<option value="NV">Nevada</option>
+												<option value="NH">New Hampshire</option>
+												<option value="NJ">New Jersey</option>
+												<option value="NM">New Mexico</option>
+												<option value="NY">New York</option>
+												<option value="NC">North Carolina</option>
+												<option value="ND">North Dakota</option>
+												<option value="OH">Ohio</option>
+												<option value="OK">Oklahoma</option>
+												<option value="OR">Oregon</option>
+												<option value="PA">Pennsylvania</option>
+												<option value="RI">Rhode Island</option>
+												<option value="SC">South Carolina</option>
+												<option value="SD">South Dakota</option>
+												<option value="TN">Tennessee</option>
+												<option value="TX">Texas</option>
+												<option value="UT">Utah</option>
+												<option value="VT">Vermont</option>
+												<option value="VA">Virginia</option>
+												<option value="WA">Washington</option>
+												<option value="WV">West Virginia</option>
+												<option value="WI">Wisconsin</option>
+												<option value="WY">Wyoming</option>
 											</select>
 										</div>
 									</div>
@@ -253,11 +254,11 @@
 										<div class="input-group">
 											<select name="issue_type" class="form-control selectpicker">
 												<option value=" ">Select the issue </option>
-												<option>Spillage</option>
-												<option>Broken pipe</option>
-												<option>Electric hazard</option>
-												<option>Broken pathway</option>
-												<option>Other</option>
+												<option value="Spillage">Spillage</option>
+												<option value="Broken pipe">Broken pipe</option>
+												<option value="Electric hazard">Electric hazard</option>
+												<option value="Broken pathway">Broken pathway</option>
+												<option value="Other">Other</option>
 											</select>
 										</div>
 									</div>
@@ -270,7 +271,7 @@
 									<label class="col-md-4 control-label">Additional details: </label>
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group">
-											<textarea id="comment" class="form-control" name="comment" placeholder="Enter short summary of issue (max 200 characters)."  maxlength="200"></textarea>
+											<textarea id="comment" class="form-control" name="comment" placeholder="Enter short summary about the issue (max 200 characters)."  maxlength="200"></textarea>
 										</div>
 									</div>
 								</div>
@@ -295,11 +296,11 @@
 
 					<div class="col-md-6">
 						<div class="form-group">
-							<label class="col-md-4 control-label">Terms and Conditions:</label>
+							<label class="col-md-4 control-label" style="text-align:left;">Terms and Conditions:</label>
 							<div class="col-md-7 inputGroupContainer">
 								<div class="input-group">
-									<input type="checkbox" name="terms" value="check" id="agree"/>I have read and agree to the
-									<a href="terms.html" target="_blank">Terms and Conditions</a>.
+									<input type="checkbox" name="terms" value="check" id="agree"/> I have read and agree to the
+									<a href="terms.html" target="_blank" style="text-decoration: underline;">Terms and Conditions</a>.
 								</div>
 							</div>
 						</div>
