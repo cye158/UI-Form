@@ -28,6 +28,20 @@ $(document).ready(function() {
           }
         }
       },
+      gender: {
+        validators: {
+          stringLength: {
+            min: 0
+          },
+        }
+      },
+      education: {
+        validators: {
+          stringLength: {
+            min: 0,
+          },
+        }
+      },
       phone: {
         validators: {
           notEmpty: {
@@ -89,6 +103,9 @@ $(document).ready(function() {
       },
       issue_date: {
         validators: {
+          notEmpty: {
+            message: 'Please enter today\'s date'
+          },
           date: {
             format: 'DD/MM/YYYY',
             message: 'The value is not a valid date (eg. DD/MM/YYYY)'

@@ -68,7 +68,7 @@
 									<div class="col-md-7 selectContainer">
 										<div class="input-group">
 											<select name="gender" class="form-control selectpicker">
-												<option value=" ">Select your gender</option>
+												<option value="">Select your gender</option>
 												<option value="Male">Male</option>
 												<option value="Female">Female</option>
 												<option value="Other">Other</option>
@@ -85,7 +85,7 @@
 									<div class="col-md-7 selectContainer">
 										<div class="input-group">
 											<select name="education" class="form-control selectpicker">
-												<option value=" ">Select your highest education</option>
+												<option value="">Select your highest education</option>
 												<option value="GED">General Educational Development(GED)</option>
 												<option value="High School Diploma">High School Diploma</option>
 												<option value="Bachelor's Degree">Bachelor's Degree</option>
@@ -159,7 +159,7 @@
 									<div class="col-md-7 selectContainer">
 										<div class="input-group">
 											<select name="state" class="form-control selectpicker">
-												<option value=" ">Select the state</option>
+												<option value="">Select the state</option>
 												<option value="AL">Alabama</option>
 												<option value="ak">Alaska</option>
 												<option value="AZ">Arizona</option>
@@ -234,7 +234,7 @@
 						<legend style="margin-top: 10px;border-top: 2.5px solid grey;">Details about the Issue <i class="glyphicon glyphicon-pencil"></i></legend>
 						<fieldset>
 
-							<!-- Zip -->
+							<!-- Date -->
 							<div class="col-md-6">
 								<div class="form-group">
 									<label class="col-md-4 control-label">Date:</label>
@@ -253,7 +253,7 @@
 									<div class="col-md-7 selectContainer">
 										<div class="input-group">
 											<select name="issue_type" class="form-control selectpicker">
-												<option value=" ">Select the problem category</option>
+												<option value="">Select the problem category</option>
 												<option value="Spillage">Spillage</option>
 												<option value="Broken pipe">Broken pipe</option>
 												<option value="Electric hazard">Electric hazard</option>

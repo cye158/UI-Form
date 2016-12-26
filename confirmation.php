@@ -12,6 +12,7 @@
   $issue_date = $_POST['issue_date'];
   $issue_type = $_POST['issue_type'];
   $comment    = $_POST['comment'];
+  $location   = $address . $city . $state . $zip;
 ?>
 
 <!DOCTYPE html>
@@ -185,12 +186,22 @@
                 </div>
               </div>
 
+              <!-- Map -->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Google Maps:</label>
+                  <div class="col-md-7 inputGroupContainer">
+                    <div id="map" onload=""></div>
+                  </div>
+                </div>
+              </div>
+
             </fieldset>
 
             <legend style="margin-top: 10px;border-top: 2.5px solid grey;">Details about the Issue <i class="glyphicon glyphicon-pencil"></i></legend>
             <fieldset>
 
-              <!-- Zip -->
+              <!-- Date -->
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="col-md-4 control-label">Date:</label>
@@ -250,7 +261,7 @@
                 <label class="col-md-4 control-label" style="text-align:left;">Terms and Conditions:</label>
                 <div class="col-md-7 inputGroupContainer">
                   <div class="input-group">
-                    <input disabled value="check" id="agree"> I have read and agree to the
+                    <input disabled value="Agreed" id="agree"> I have read and agree to the
                     <a href="terms.html" target="_blank" style="text-decoration: underline;">Terms and Conditions</a>.
                   </div>
                 </div>
@@ -266,8 +277,12 @@
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
-    <script type="text/javascript" src="../js/form.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/form.js"></script>
+    <script type="text/javascript" src="./js/maps.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwJMd3lV5AaJ0Qf5d10tp0H1eHnaOEskA&callback=initMap(<?php echo $location?>)"
+    async defer></script>
 
   </body>
   </html>
