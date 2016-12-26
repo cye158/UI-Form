@@ -4,31 +4,31 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![ENDif]-->
 <!--[if gt IE 8]><!-->
 <?php
-   if(isset($_FILES['image'])){
-      $errors= array();
-      $file_name = $_FILES['image']['name'];
-      $file_size =$_FILES['image']['size'];
-      $file_tmp =$_FILES['image']['tmp_name'];
-      $file_type=$_FILES['image']['type'];
-      $file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
+if(isset($_FILES['image'])){
+	$errors= array();
+	$file_name = $_FILES['image']['name'];
+	$file_size =$_FILES['image']['size'];
+	$file_tmp =$_FILES['image']['tmp_name'];
+	$file_type=$_FILES['image']['type'];
+	$file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
 
-      $expensions= array("jpeg","jpg","png");
+	$expensions= array("jpeg","jpg","png");
 
-      if(in_array($file_ext,$expensions)=== false){
-         $errors[]="extension not allowed, please choose a JPEG or PNG file.";
-      }
+	if(in_array($file_ext,$expensions)=== false){
+		$errors[]="extension not allowed, please choose a JPEG or PNG file.";
+	}
 
-      if($file_size > 2097152){
-         $errors[]='File size must be excately 2 MB';
-      }
+	if($file_size > 2097152){
+		$errors[]='File size must be excately 2 MB';
+	}
 
-      if(empty($errors)==true){
-         move_uploaded_file($file_tmp,"images/".$file_name);
-         echo "Success";
-      }else{
-         print_r($errors);
-      }
-   }
+	if(empty($errors)==true){
+		move_uploaded_file($file_tmp,"images/".$file_name);
+		echo "Success";
+	}else{
+		print_r($errors);
+	}
+}
 ?>
 
 <html class="no-js" lang="en">
@@ -315,10 +315,10 @@
 									<label class="col-md-4 control-label">Upload Image: </label>
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group image_wrapper">
-											<div class="form-control">
 											<input type='file' onchange="readURL(this);" />
-    									<img id="image" />
-										</div>
+											<div class="form-control">
+												<img id="image" />
+											</div>
 										</div>
 									</div>
 								</div>
@@ -344,36 +344,36 @@
 
 					<!-- Clear Button -->
 					<div class="pull-right">
-					<div class="col-md-6" style="display:inline-block; padding:0px;">
-						<div class="form-group">
-							<label class="col-md-4 control-label"></label>
-							<div class="col-md-6">
-								<button type="reset" class="btn btn-default" id="clear">Clear Form</button>
+						<div class="col-md-6" style="display:inline-block; padding:0px;">
+							<div class="form-group">
+								<label class="col-md-4 control-label"></label>
+								<div class="col-md-6">
+									<button type="reset" class="btn btn-default" id="clear">Clear Form</button>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<!-- Submit Button -->
-					<div class="col-md-6" style="display:inline-block; padding:0px;">
-						<div class="form-group">
-							<label class="col-md-4 control-label"></label>
-							<div class="col-md-6">
-								<button type="submit" class="btn btn-primary">Submit</button>
+						<!-- Submit Button -->
+						<div class="col-md-6" style="display:inline-block; padding:0px;">
+							<div class="form-group">
+								<label class="col-md-4 control-label"></label>
+								<div class="col-md-6">
+									<button type="submit" class="btn btn-primary">Submit</button>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div>
+						<div>
 
-				</form>
+						</form>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-	<!-- /.container -->
+			<!-- /.container -->
 
 
-	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
-	<script type="text/javascript" src="./js/form.js"></script>
+			<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+			<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+			<script type="text/javascript" src="./js/form.js"></script>
 
-</body>
-</html>
+		</body>
+		</html>
