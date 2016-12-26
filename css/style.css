@@ -7,6 +7,18 @@
   height: 350px;
 }
 
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section { 
+    display: block;
+  }
+
 .input-group-addon {
   width: 7% !important;
 }

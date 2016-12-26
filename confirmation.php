@@ -280,8 +280,6 @@ var address     = street + city + state + zip;
                     <label class="col-md-4 control-label">Upload Image: </label>
                     <div class="col-md-7 inputGroupContainer">
                       <div class="input-group">
-                        <input readonly type="file" onchange="readURL(this);" />
-                        <img id="issue_img" style="display: block;"/>
                       </div>
                     </div>
                   </div>
