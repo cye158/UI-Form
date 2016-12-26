@@ -4,7 +4,7 @@ $(document).ready(function initLoc(loc_param) {
 
   function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 14,
+      zoom: 15,
       center: {lat: 37.7219, lng: -122.4782}
     });
     var geocoder = new google.maps.Geocoder();
