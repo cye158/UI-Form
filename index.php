@@ -131,10 +131,10 @@
 							<!-- St Address -->
 							<div class="col-md-6">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Address:</label>
+									<label class="col-md-4 control-label">Street Address:</label>
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group">
-											<input name="address" placeholder="Street Address" class="form-control" type="text">
+											<input name="st_address" placeholder="Street Address" class="form-control" type="text">
 										</div>
 									</div>
 								</div>

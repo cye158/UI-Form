@@ -5,14 +5,14 @@ $gender     = $_POST['gender'];
 $education  = $_POST['education'];
 $phone      = $_POST['phone'];
 $email      = $_POST['email'];
-$address    = $_POST['address'];
+$st_address = $_POST['st_address'];
 $city       = $_POST['city'];
 $state      = $_POST['state'];
 $zip        = $_POST['zip'];
 $issue_date = $_POST['issue_date'];
 $issue_type = $_POST['issue_type'];
 $comment    = $_POST['comment'];
-$location   = $address . " " . $city . " " . $state . " " . $zip;
+$location   = $st_address . " " . $city . " " . $state . " " . $zip;
 ?>
 
 <!DOCTYPE html>
@@ -139,10 +139,10 @@ $location   = $address . " " . $city . " " . $state . " " . $zip;
               <!-- St Address -->
               <div class="col-md-6">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Address:</label>
+                  <label class="col-md-4 control-label">Street Address:</label>
                   <div class="col-md-7 inputGroupContainer">
                     <div class="input-group">
-                      <input class="form-control" disabled value="<?php echo $address; ?>">
+                      <input class="form-control" disabled value="<?php echo $st_address; ?>">
                     </div>
                   </div>
                 </div>
@@ -190,7 +190,7 @@ $location   = $address . " " . $city . " " . $state . " " . $zip;
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="col-md-4 control-label">Google Maps:</label>
-                  <div class="col-md-7 inputGroupContainer">
+                  <div class="col-md-7">
                     <div id="map"></div>
                     <script>
                     function initMap() {
