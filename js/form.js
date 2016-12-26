@@ -128,7 +128,7 @@ $(document).ready(function() {
           }
         }
       },
-      captchaOne: {
+      cap_one: {
         validators: {
           notEmpty: {
             message: 'The captcha code is required'
@@ -139,7 +139,7 @@ $(document).ready(function() {
           }
         }
       },
-      captchaTwo: {
+      cap_two: {
         validators: {
           notEmpty: {
             message: 'The captcha code is required'
@@ -150,7 +150,7 @@ $(document).ready(function() {
           }
         }
       },
-      captchaThree: {
+      cap_three: {
         validators: {
           notEmpty: {
             message: 'The captcha code is required'

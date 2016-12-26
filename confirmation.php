@@ -297,8 +297,17 @@ var address     = street + city + state + zip;
                   <div class="input-group">
                     <input disabled type="checkbox" checked> I have read and agree to the
   									<a href="terms.html" target="_blank" style="text-decoration: underline;">Terms and Conditions</a>.
-                    <script>
-                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="col-md-4 control-label">Captcha:</label>
+                <div class="col-md-7 inputGroupContainer">
+                  <div class="input-group">
+                    <input disabled type="checkbox" checked> Captcha verified
                   </div>
                 </div>
               </div>

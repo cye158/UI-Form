@@ -350,15 +350,15 @@ if(isset($_FILES['image'])){
 										var randNum = Math.floor(Math.random() * 3) + 1 ;
 										if (randNum == 1) {
 											document.write('<img src="./img/c1.gif">');
-											document.write('<input type="text" class="input-group" name="captchaOne" />');
+											document.write('<input type="text" class="input-group" name="cap_one" />');
 										}
 										if (randNum == 2) {
 											document.write('<img src="./img/c2.gif">');
-											document.write('<input type="text" class="input-group" name="captchaTwo" />');
+											document.write('<input type="text" class="input-group" name="cap_two" />');
 										}
 										if (randNum == 3) {
 											document.write('<img src="./img/c3.gif">');
-											document.write('<input type="text" class="input-group" name="captchaTwo" />');
+											document.write('<input type="text" class="input-group" name="cap_three" />');
 										}
 									</script>
 
