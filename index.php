@@ -339,8 +339,7 @@ if(isset($_FILES['image'])){
 						</div>
 					</div>
 
-					<hr style="margin-top: 5px; margin-bottom: 5px;">
-
+					<!-- Captcha -->
 					<div class="col-xs-12">
 						<div class="form-group">
 							<label class="col-lg-4 control-label">Captcha: *</label>

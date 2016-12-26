@@ -62,10 +62,10 @@ var address     = street + city + state + zip;
 
   <!-- container -->
   <div class="container" style="min-width: 350px;">
-    <div class="col-md-12">
+    <div class="col-xs-12">
       <h3 style="font-weight:bolder; font-size:25px; text-align:center;">Please Verify Your Submission</h3>
 
-      <div class="col-md-12">
+      <div class="col-xs-12">
 
         <hr style="margin-top: 5px; margin-bottom: 5px;">
         <form class="form-horizontal" id="form">
@@ -75,10 +75,10 @@ var address     = street + city + state + zip;
             <fieldset>
 
               <!-- First Name -->
-              <div class="col-md-6">
+              <div class="col-xs-12">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">First Name:</label>
-                  <div class="col-md-7 inputGroupContainer">
+                  <label class="col-lg-4 control-label">First Name:</label>
+                  <div class="col-lg-7 inputGroupContainer">
                     <div class="input-group">
                       <input class="form-control" readonly value="<?php echo $first_name; ?>">
                     </div>
@@ -87,10 +87,10 @@ var address     = street + city + state + zip;
               </div>
 
               <!-- Last Name -->
-              <div class="col-md-6"	>
+              <div class="col-xs-12"	>
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Last Name:</label>
-                  <div class="col-md-7 inputGroupContainer">
+                  <label class="col-lg-4 control-label">Last Name:</label>
+                  <div class="col-lg-7 inputGroupContainer">
                     <div class="input-group">
                       <input class="form-control" readonly value="<?php echo $last_name; ?>">
                     </div>
@@ -99,10 +99,10 @@ var address     = street + city + state + zip;
               </div>
 
               <!-- Select Gender -->
-              <div class="col-md-6">
+              <div class="col-xs-12">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Gender:</label>
-                  <div class="col-md-7 selectContainer">
+                  <label class="col-lg-4 control-label">Gender:</label>
+                  <div class="col-lg-7 selectContainer">
                     <div class="input-group">
                       <input class="form-control" readonly value="<?php echo $gender; ?>">
                     </div>
@@ -111,10 +111,10 @@ var address     = street + city + state + zip;
               </div>
 
               <!-- Education -->
-              <div class="col-md-6">
+              <div class="col-xs-12">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Education:</label>
-                  <div class="col-md-7 selectContainer">
+                  <label class="col-lg-4 control-label">Education:</label>
+                  <div class="col-lg-7 selectContainer">
                     <div class="input-group">
                         <input class="form-control" readonly value="<?php echo $education; ?>">
                     </div>
@@ -123,10 +123,10 @@ var address     = street + city + state + zip;
               </div>
 
               <!-- Phone -->
-              <div class="col-md-6">
+              <div class="col-xs-12">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Phone #:</label>
-                  <div class="col-md-7 inputGroupContainer">
+                  <label class="col-lg-4 control-label">Phone #:</label>
+                  <div class="col-lg-7 inputGroupContainer">
                     <div class="input-group">
                       <input class="form-control" readonly value="<?php echo $phone; ?>">
                     </div>
@@ -135,10 +135,10 @@ var address     = street + city + state + zip;
               </div>
 
               <!-- Email -->
-              <div class="col-md-6">
+              <div class="col-xs-12">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">E-Mail:</label>
-                  <div class="col-md-7 inputGroupContainer">
+                  <label class="col-lg-4 control-label">E-Mail:</label>
+                  <div class="col-lg-7 inputGroupContainer">
                     <div class="input-group">
                       <input class="form-control" readonly value="<?php echo $email; ?>">
                     </div>
@@ -153,10 +153,10 @@ var address     = street + city + state + zip;
             <fieldset>
 
               <!-- St Address -->
-              <div class="col-md-6">
+              <div class="col-xs-12">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Street Address:</label>
-                  <div class="col-md-7 inputGroupContainer">
+                  <label class="col-lg-4 control-label">Street Address:</label>
+                  <div class="col-lg-7 inputGroupContainer">
                     <div class="input-group">
                       <input class="form-control" readonly value="<?php echo $street; ?>">
                     </div>
@@ -165,10 +165,10 @@ var address     = street + city + state + zip;
               </div>
 
               <!-- City -->
-              <div class="col-md-6">
+              <div class="col-xs-12">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">City:</label>
-                  <div class="col-md-7 inputGroupContainer">
+                  <label class="col-lg-4 control-label">City:</label>
+                  <div class="col-lg-7 inputGroupContainer">
                     <div class="input-group">
                       <input class="form-control" readonly value="<?php echo $city; ?>">
                     </div>
@@ -177,10 +177,10 @@ var address     = street + city + state + zip;
               </div>
 
               <!-- State -->
-              <div class="col-md-6">
+              <div class="col-xs-12">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">State:</label>
-                  <div class="col-md-7 selectContainer">
+                  <label class="col-lg-4 control-label">State:</label>
+                  <div class="col-lg-7 selectContainer">
                     <div class="input-group">
                         <input class="form-control" readonly value="<?php echo $state; ?>">
                     </div>
@@ -189,10 +189,10 @@ var address     = street + city + state + zip;
               </div>
 
               <!-- Zip -->
-              <div class="col-md-6">
+              <div class="col-xs-12">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Zip Code:</label>
-                  <div class="col-md-7 inputGroupContainer">
+                  <label class="col-lg-4 control-label">Zip Code:</label>
+                  <div class="col-lg-7 inputGroupContainer">
                     <div class="input-group">
                       <input class="form-control" readonly value="<?php echo $zip; ?>">
                     </div>
@@ -201,10 +201,10 @@ var address     = street + city + state + zip;
               </div>
 
               <!-- Map -->
-              <div class="col-md-6">
+              <div class="col-xs-12">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Google Maps:</label>
-                  <div class="col-md-7">
+                  <label class="col-lg-4 control-label">Google Maps:</label>
+                  <div class="col-lg-7">
                     <div id="map"></div>
                     <script>
                     function initMap() {
@@ -240,10 +240,10 @@ var address     = street + city + state + zip;
             <fieldset>
 
               <!-- Date -->
-              <div class="col-md-6">
+              <div class="col-xs-12">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Date:</label>
-                  <div class="col-md-7 inputGroupContainer">
+                  <label class="col-lg-4 control-label">Date:</label>
+                  <div class="col-lg-7 inputGroupContainer">
                     <div class="input-group">
                       <input class="form-control" readonly value="<?php echo $issue_date; ?>">
                     </div>
@@ -252,10 +252,10 @@ var address     = street + city + state + zip;
               </div>
 
               <!-- Issue Type -->
-              <div class="col-md-6">
+              <div class="col-xs-12">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Category of Issue:</label>
-                  <div class="col-md-7 selectContainer">
+                  <label class="col-lg-4 control-label">Category of Issue:</label>
+                  <div class="col-lg-7 selectContainer">
                     <div class="input-group">
                       <input class="form-control" readonly value="<?php echo $issue_type; ?>">
                       </div>
@@ -264,10 +264,10 @@ var address     = street + city + state + zip;
                 </div>
 
                 <!-- Comment -->
-                <div class="col-md-6">
+                <div class="col-xs-12">
                   <div class="form-group">
-                    <label class="col-md-4 control-label">Additional details: </label>
-                    <div class="col-md-7 inputGroupContainer">
+                    <label class="col-lg-4 control-label">Additional details: </label>
+                    <div class="col-lg-7 inputGroupContainer">
                       <div class="input-group">
                         <textarea class="form-control" readonly><?php echo $comment; ?></textarea>
                       </div>
@@ -276,10 +276,10 @@ var address     = street + city + state + zip;
                 </div>
 
                 <!-- Image -->
-                <div class="col-md-6">
+                <div class="col-xs-12">
                   <div class="form-group">
-                    <label class="col-md-4 control-label">Upload Image: </label>
-                    <div class="col-md-7 inputGroupContainer">
+                    <label class="col-lg-4 control-label">Upload Image: </label>
+                    <div class="col-lg-7 inputGroupContainer">
                       <div class="input-group">
                       </div>
                     </div>
@@ -289,11 +289,11 @@ var address     = street + city + state + zip;
             </fieldset>
             <hr style="margin-top: 5px; margin-bottom: 5px;">
 
-
-            <div class="col-md-6">
+            <!-- Terms -->
+            <div class="col-xs-12">
               <div class="form-group">
-                <label class="col-md-4 control-label">Terms and Conditions:</label>
-                <div class="col-md-7 inputGroupContainer">
+                <label class="col-lg-4 control-label">Terms and Conditions:</label>
+                <div class="col-lg-7 inputGroupContainer">
                   <div class="input-group">
                     <input disabled type="checkbox" checked> I have read and agree to the
   									<a href="terms.html" target="_blank" style="text-decoration: underline;">Terms and Conditions</a>.
@@ -302,10 +302,11 @@ var address     = street + city + state + zip;
               </div>
             </div>
 
-            <div class="col-md-6">
+            <!-- Captcha -->
+            <div class="col-xs-12">
               <div class="form-group">
-                <label class="col-md-4 control-label">Captcha:</label>
-                <div class="col-md-7 inputGroupContainer">
+                <label class="col-lg-4 control-label">Captcha:</label>
+                <div class="col-lg-7 inputGroupContainer">
                   <div class="input-group">
                     <input disabled type="checkbox" checked> Captcha verification.
                   </div>
