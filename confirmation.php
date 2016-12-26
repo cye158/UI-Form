@@ -1,18 +1,18 @@
 <?php
-  $first_name = $_POST['first_name'];
-  $last_name  = $_POST['last_name'];
-  $gender     = $_POST['gender'];
-  $education  = $_POST['education'];
-  $phone      = $_POST['phone'];
-  $email      = $_POST['email'];
-  $address    = $_POST['address'];
-  $city       = $_POST['city'];
-  $state      = $_POST['state'];
-  $zip        = $_POST['zip'];
-  $issue_date = $_POST['issue_date'];
-  $issue_type = $_POST['issue_type'];
-  $comment    = $_POST['comment'];
-  $location   = $address . $city . $state . $zip;
+$first_name = $_POST['first_name'];
+$last_name  = $_POST['last_name'];
+$gender     = $_POST['gender'];
+$education  = $_POST['education'];
+$phone      = $_POST['phone'];
+$email      = $_POST['email'];
+$address    = $_POST['address'];
+$city       = $_POST['city'];
+$state      = $_POST['state'];
+$zip        = $_POST['zip'];
+$issue_date = $_POST['issue_date'];
+$issue_type = $_POST['issue_type'];
+$comment    = $_POST['comment'];
+$location   = $address . $city . $state . $zip;
 ?>
 
 <!DOCTYPE html>
@@ -204,7 +204,7 @@
                     }
 
                     function geocodeAddress(geocoder, resultsMap, location) {
-                      geocoder.geocode({'address': address}, function(results, status) {
+                      geocoder.geocode({'address': location}, function(results, status) {
                         if (status === 'OK') {
                           resultsMap.setCenter(results[0].geometry.location);
                           var marker = new google.maps.Marker({
