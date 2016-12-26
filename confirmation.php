@@ -191,7 +191,7 @@
                 <div class="form-group">
                   <label class="col-md-4 control-label">Google Maps:</label>
                   <div class="col-md-7 inputGroupContainer">
-                    <div id="map" onload=""></div>
+                    <div id="map" onload="initLoc(<?php echo $location?>)"></div>
                   </div>
                 </div>
               </div>
@@ -281,7 +281,7 @@
     <script type="text/javascript" src="./js/form.js"></script>
     <script type="text/javascript" src="./js/maps.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwJMd3lV5AaJ0Qf5d10tp0H1eHnaOEskA&callback=initMap(<?php echo $location?>)"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwJMd3lV5AaJ0Qf5d10tp0H1eHnaOEskA&callback=initMap"
     async defer></script>
 
   </body>
