@@ -307,7 +307,7 @@ var address     = street + city + state + zip;
                 <label class="col-md-4 control-label">Captcha:</label>
                 <div class="col-md-7 inputGroupContainer">
                   <div class="input-group">
-                    <input disabled type="checkbox" checked> Captcha verified
+                    <input disabled type="checkbox" checked> Captcha verification.
                   </div>
                 </div>
               </div>
