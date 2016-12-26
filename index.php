@@ -316,9 +316,7 @@ if(isset($_FILES['image'])){
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group image_wrapper">
 											<input type='file' onchange="readURL(this);" />
-											<div class="form-control">
 												<img id="image" />
-											</div>
 										</div>
 									</div>
 								</div>
