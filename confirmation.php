@@ -57,9 +57,6 @@ var address     = street + city + state + zip;
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 </head>
 <body>
-<script>document.write(address);</script><br>
-<script>document.write(issue_type);</script><br>
-<?php echo $issue_type; ?>
 
 
   <!-- container -->
@@ -105,9 +102,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">Gender:</label>
                   <div class="col-md-7 selectContainer">
                     <div class="input-group">
-                      <select disabled class="form-control selectpicker">
-                        <option><?php echo $gender; ?></option>
-                      </select>
+                      <input class="form-control" disabled value="<?php echo $gender; ?>">
                     </div>
                   </div>
                 </div>
@@ -119,9 +114,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">Education:</label>
                   <div class="col-md-7 selectContainer">
                     <div class="input-group">
-                      <select disabled class="form-control selectpicker">
-                        <option><?php echo $education; ?></option>
-                      </select>
+                        <input class="form-control" disabled value="<?php echo $education; ?>">
                     </div>
                   </div>
                 </div>
@@ -187,9 +180,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">State:</label>
                   <div class="col-md-7 selectContainer">
                     <div class="input-group">
-                      <select disabled class="form-control selectpicker">
-                        <option><?php echo $state; ?></option>
-                      </select>
+                        <input class="form-control" disabled value="<?php echo $state; ?>">
                     </div>
                   </div>
                 </div>
@@ -264,9 +255,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">Category of Issue:</label>
                   <div class="col-md-7 selectContainer">
                     <div class="input-group">
-                      <select disabled class="form-control selectpicker">
-                        <optio><?php echo $issue_type; ?></option>
-                        </select>
+                      <input class="form-control" disabled value="<?php echo $issue_type; ?>">
                       </div>
                     </div>
                   </div>
