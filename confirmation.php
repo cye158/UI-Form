@@ -12,7 +12,7 @@ $zip        = $_POST['zip'];
 $issue_date = $_POST['issue_date'];
 $issue_type = $_POST['issue_type'];
 $comment    = $_POST['comment'];
-$location   = $st_address . " " . $city . " " . $state . " " . $zip;
+$location   = $st_address . $city . $state . $zip;
 ?>
 
 <!DOCTYPE html>
