@@ -5,14 +5,14 @@ $gender     = $_POST['gender'];
 $education  = $_POST['education'];
 $phone      = $_POST['phone'];
 $email      = $_POST['email'];
-$st_address = $_POST['st_address'];
+$street     = $_POST['street'];
 $city       = $_POST['city'];
 $state      = $_POST['state'];
 $zip        = $_POST['zip'];
 $issue_date = $_POST['issue_date'];
 $issue_type = $_POST['issue_type'];
 $comment    = $_POST['comment'];
-$location   = $st_address . $city . $state . $zip;
+$location   = $street . $city . $state . $zip;
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +40,7 @@ $location   = $st_address . $city . $state . $zip;
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 </head>
 <body>
-<?php echo $st_address; ?>
+<?php echo $street; ?>
 <?php echo $location; ?>
   <!-- container -->
   <div class="container" style="min-width: 350px;">
@@ -143,7 +143,7 @@ $location   = $st_address . $city . $state . $zip;
                   <label class="col-md-4 control-label">Street Address:</label>
                   <div class="col-md-7 inputGroupContainer">
                     <div class="input-group">
-                      <input class="form-control" disabled value="<?php echo $st_address; ?>">
+                      <input class="form-control" disabled value="<?php echo $street; ?>">
                     </div>
                   </div>
                 </div>
