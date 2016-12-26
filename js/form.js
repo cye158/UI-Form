@@ -128,46 +128,79 @@ $(document).ready(function() {
           }
         }
       },
+      captchaOne: {
+        validators: {
+          notEmpty: {
+            message: 'The captcha code is required'
+          },
+          regexp: {
+            regexp: /^[N]+[4]+[E]+[L]+[3]$/,
+            message: 'The captcha is invalid'
+          }
+        }
+      },
+      captchaTwo: {
+        validators: {
+          notEmpty: {
+            message: 'The captcha code is required'
+          },
+          regexp: {
+            regexp: /^[3]+[P]+[L]+[H]+[J]$/,
+            message: 'The captcha is invalid'
+          }
+        }
+      },
+      captchaThree: {
+        validators: {
+          notEmpty: {
+            message: 'The captcha code is required'
+          },
+          regexp: {
+            regexp: /^[F]+[6]+[2]+[P]+[B]$/,
+            message: 'The captcha is invalid'
+          }
+        }
+      },
     }
   })
 
 
   /*.on('success.form.bv', function(e) {
-    $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-    $('#form').data('bootstrapValidator').resetForm(true);
+  $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+  $('#form').data('bootstrapValidator').resetForm(true);
 
-    // Prevent form submission
-    e.preventDefault();
+  // Prevent form submission
+  e.preventDefault();
 
-    // Get the form instance
-    var $form = $(e.target);
+  // Get the form instance
+  var $form = $(e.target);
 
-    // Get the BootstrapValidator instance
-    var bv = $form.data('bootstrapValidator');
+  // Get the BootstrapValidator instance
+  var bv = $form.data('bootstrapValidator');
 
-    // Use Ajax to submit form data
-    $.post($form.attr('action'), $form.serialize(), function(result) {
-      console.log(result);
-    }, 'json');
+  // Use Ajax to submit form data
+  $.post($form.attr('action'), $form.serialize(), function(result) {
+  console.log(result);
+}, 'json');
 
-  });*/
+});*/
 
-    $('#clear').click( function () {
-      $('#form').data('bootstrapValidator').resetForm(true);
-    });
+$('#clear').click( function () {
+  $('#form').data('bootstrapValidator').resetForm(true);
+});
 
 
 });
 
 function readURL(input) {
-   if (input.files && input.files[0]) {
-       var reader = new FileReader();
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
 
-       reader.onload = function (e) {
-           $('#image')
-               .attr('src', e.target.result)
-       };
+    reader.onload = function (e) {
+      $('#image')
+      .attr('src', e.target.result)
+    };
 
-       reader.readAsDataURL(input.files[0]);
-   }
+    reader.readAsDataURL(input.files[0]);
+  }
 };

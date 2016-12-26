@@ -66,7 +66,8 @@ var address     = street + city + state + zip;
       <h3 style="font-weight:bolder; font-size:25px; text-align:center;">Please Verify Your Submission</h3>
 
       <div class="col-md-12">
-        <hr>
+
+        <hr style="margin-top: 5px; margin-bottom: 5px;">
         <form class="form-horizontal" id="form">
           <!-- Form Name -->
           <div style="border: 4px solid #666; border-radius: 2px; padding: 7.5px;">
@@ -291,7 +292,7 @@ var address     = street + city + state + zip;
 
             <div class="col-md-6">
               <div class="form-group">
-                <label class="col-md-4 control-label" style="text-align:left;">Terms and Conditions:</label>
+                <label class="col-md-4 control-label">Terms and Conditions:</label>
                 <div class="col-md-7 inputGroupContainer">
                   <div class="input-group">
                     <input disabled type="checkbox" checked> I have read and agree to the

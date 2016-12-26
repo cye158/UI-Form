@@ -56,12 +56,12 @@ if(isset($_FILES['image'])){
 
 <body>
 	<!-- container -->
-	<div class="container" style="min-width: 350px;">
-		<div class="col-md-12">
+	<div class="container" style="min-width:350px; max-width:800px;">
+		<div class="col-xs-12">
 			<h3 style="font-weight:bolder; font-size:25px; text-align:center;">Please Record the Problem by Filling the Form Below</h3>
 
-			<div class="col-md-12">
-				<hr>
+			<div class="col-xs-12">
+				<hr style="margin-top: 5px; margin-bottom: 5px;">
 				<form class="form-horizontal" action="confirmation.php" method="post" id="form" enctype="multipart/form-data">
 					<!-- Form Name -->
 					<div style="border: 4px solid #666; border-radius: 2px; padding: 7.5px;">
@@ -69,10 +69,10 @@ if(isset($_FILES['image'])){
 						<fieldset>
 
 							<!-- First Name -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">First Name:</label>
-									<div class="col-md-7 inputGroupContainer">
+									<label class="col-lg-4 control-label">First Name:</label>
+									<div class="col-lg-7 inputGroupContainer">
 										<div class="input-group">
 											<input  name="first_name" placeholder="First Name" class="form-control"  type="text">
 
@@ -82,10 +82,10 @@ if(isset($_FILES['image'])){
 							</div>
 
 							<!-- Last Name -->
-							<div class="col-md-6"	>
+							<div class="col-xs-12"	>
 								<div class="form-group">
-									<label class="col-md-4 control-label">Last Name:</label>
-									<div class="col-md-7 inputGroupContainer">
+									<label class="col-lg-4 control-label">Last Name:</label>
+									<div class="col-lg-7 inputGroupContainer">
 										<div class="input-group">
 											<input name="last_name" placeholder="Last Name" class="form-control" type="text">
 										</div>
@@ -94,10 +94,10 @@ if(isset($_FILES['image'])){
 							</div>
 
 							<!-- Select Gender -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Gender:</label>
-									<div class="col-md-7 selectContainer">
+									<label class="col-lg-4 control-label">Gender:</label>
+									<div class="col-lg-7 selectContainer">
 										<div class="input-group">
 											<select name="gender" class="form-control selectpicker">
 												<option value="">Select your gender</option>
@@ -111,10 +111,10 @@ if(isset($_FILES['image'])){
 							</div>
 
 							<!-- Education -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Education:</label>
-									<div class="col-md-7 selectContainer">
+									<label class="col-lg-4 control-label">Education:</label>
+									<div class="col-lg-7 selectContainer">
 										<div class="input-group">
 											<select name="education" class="form-control selectpicker">
 												<option value="">Select your highest education</option>
@@ -131,10 +131,10 @@ if(isset($_FILES['image'])){
 							</div>
 
 							<!-- Phone -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Phone #:</label>
-									<div class="col-md-7 inputGroupContainer">
+									<label class="col-lg-4 control-label">Phone #: *</label>
+									<div class="col-lg-7 inputGroupContainer">
 										<div class="input-group">
 											<input name="phone" placeholder="(555)555-5555" class="form-control" type="text">
 										</div>
@@ -143,10 +143,10 @@ if(isset($_FILES['image'])){
 							</div>
 
 							<!-- Email -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">E-Mail:</label>
-									<div class="col-md-7 inputGroupContainer">
+									<label class="col-lg-4 control-label">E-Mail: *</label>
+									<div class="col-lg-7 inputGroupContainer">
 										<div class="input-group">
 											<input name="email" placeholder="mail@domain.com" class="form-control" type="text">
 										</div>
@@ -161,10 +161,10 @@ if(isset($_FILES['image'])){
 						<fieldset>
 
 							<!-- St Address -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Street Address:</label>
-									<div class="col-md-7 inputGroupContainer">
+									<label class="col-lg-4 control-label">Street Address: *</label>
+									<div class="col-lg-7 inputGroupContainer">
 										<div class="input-group">
 											<input name="street" placeholder="Street Address" class="form-control" type="text">
 										</div>
@@ -173,10 +173,10 @@ if(isset($_FILES['image'])){
 							</div>
 
 							<!-- City -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">City:</label>
-									<div class="col-md-7 inputGroupContainer">
+									<label class="col-lg-4 control-label">City: *</label>
+									<div class="col-lg-7 inputGroupContainer">
 										<div class="input-group">
 											<input name="city" placeholder="City" class="form-control"  type="text">
 										</div>
@@ -185,10 +185,10 @@ if(isset($_FILES['image'])){
 							</div>
 
 							<!-- State -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">State:</label>
-									<div class="col-md-7 selectContainer">
+									<label class="col-lg-4 control-label">State: *</label>
+									<div class="col-lg-7 selectContainer">
 										<div class="input-group">
 											<select name="state" class="form-control selectpicker">
 												<option value="">Select the state</option>
@@ -250,10 +250,10 @@ if(isset($_FILES['image'])){
 							</div>
 
 							<!-- Zip -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Zip Code:</label>
-									<div class="col-md-7 inputGroupContainer">
+									<label class="col-lg-4 control-label">Zip Code: *</label>
+									<div class="col-lg-7 inputGroupContainer">
 										<div class="input-group">
 											<input name="zip" placeholder="Zip" class="form-control" type="text">
 										</div>
@@ -267,10 +267,10 @@ if(isset($_FILES['image'])){
 						<fieldset>
 
 							<!-- Date -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Date:</label>
-									<div class="col-md-7 inputGroupContainer">
+									<label class="col-lg-4 control-label">Date: *</label>
+									<div class="col-lg-7 inputGroupContainer">
 										<div class="input-group">
 											<input name="issue_date" placeholder="DD/MM/YYYY" class="form-control" type="text">
 										</div>
@@ -279,10 +279,10 @@ if(isset($_FILES['image'])){
 							</div>
 
 							<!-- Issue Type -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Problem:</label>
-									<div class="col-md-7 selectContainer">
+									<label class="col-lg-4 control-label">Problem: *</label>
+									<div class="col-lg-7 selectContainer">
 										<div class="input-group">
 											<select name="issue_type" class="form-control selectpicker">
 												<option value="">Select the problem category</option>
@@ -298,10 +298,10 @@ if(isset($_FILES['image'])){
 							</div>
 
 							<!-- Comment -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Additional Details: </label>
-									<div class="col-md-7 inputGroupContainer">
+									<label class="col-lg-4 control-label">Additional Details: </label>
+									<div class="col-lg-7 inputGroupContainer">
 										<div class="input-group">
 											<textarea id="comment" class="form-control" name="comment" placeholder="Enter short summary about the problem (max 200 characters)."  maxlength="200"></textarea>
 										</div>
@@ -310,13 +310,13 @@ if(isset($_FILES['image'])){
 							</div>
 
 							<!-- Image -->
-							<div class="col-md-6">
+							<div class="col-xs-12">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Upload Image: </label>
-									<div class="col-md-7 inputGroupContainer">
+									<label class="col-lg-4 control-label">Upload Image: </label>
+									<div class="col-lg-7 inputGroupContainer">
 										<div class="input-group image_wrapper">
 											<input type='file' onchange="readURL(this);" />
-												<img id="image" />
+											<img id="image" />
 										</div>
 									</div>
 								</div>
@@ -327,10 +327,10 @@ if(isset($_FILES['image'])){
 
 
 					<!-- Terms -->
-					<div class="col-md-6">
+					<div class="col-xs-12">
 						<div class="form-group">
-							<label class="col-md-4 control-label" style="text-align:left;">Terms and Conditions:</label>
-							<div class="col-md-7 inputGroupContainer">
+							<label class="col-lg-4 control-label">Terms and Conditions: *</label>
+							<div class="col-lg-7 inputGroupContainer" style="padding-top: 7px;">
 								<div class="input-group">
 									<input type="checkbox" name="terms" value="check" id="agree"/> I have read and agree to the
 									<a href="terms.html" target="_blank" style="text-decoration: underline;">Terms and Conditions</a>.
@@ -339,39 +339,63 @@ if(isset($_FILES['image'])){
 						</div>
 					</div>
 
+					<hr style="margin-top: 5px; margin-bottom: 5px;">
 
-					<!-- Clear Button -->
-					<div class="pull-right">
-						<div class="col-md-6" style="display:inline-block; padding:0px;">
-							<div class="form-group">
-								<label class="col-md-4 control-label"></label>
-								<div class="col-md-6">
-									<button type="reset" class="btn btn-default" id="clear">Clear Form</button>
+					<div class="col-xs-12">
+						<div class="form-group">
+							<label class="col-lg-4 control-label">Captcha: *</label>
+							<div class="col-lg-7 inputGroupContainer captcha">
+									<script>
+										document.write('<h6>Type these characters in the box provided below (case sensitive*)</h6><br>');
+										var randNum = Math.floor(Math.random() * 3) + 1 ;
+										if (randNum == 1) {
+											document.write('<img src="./img/c1.gif">');
+											document.write('<input type="text" class="input-group" name="captchaOne" />');
+										}
+										if (randNum == 2) {
+											document.write('<img src="./img/c2.gif">');
+											document.write('<input type="text" class="input-group" name="captchaTwo" />');
+										}
+										if (randNum == 3) {
+											document.write('<img src="./img/c3.gif">');
+											document.write('<input type="text" class="input-group" name="captchaTwo" />');
+										}
+									</script>
+
 								</div>
 							</div>
 						</div>
 
-						<!-- Submit Button -->
-						<div class="col-md-6" style="display:inline-block; padding:0px;">
-							<div class="form-group">
-								<label class="col-md-4 control-label"></label>
-								<div class="col-md-6">
-									<button type="submit" class="btn btn-primary">Submit</button>
+						<!-- Clear Button -->
+						<div class="pull-right">
+							<div class="col-xs-6" style="display:inline-block;">
+								<div class="form-group">
+									<div class="col-xs-12">
+										<button type="reset" class="btn btn-default" id="clear">Clear Form</button>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div>
 
-						</form>
+							<!-- Submit Button -->
+							<div class="col-xs-6" style="display:inline-block;">
+								<div class="form-group">
+									<div class="col-xs-12">
+										<button type="submit" class="btn btn-primary">Submit</button>
+									</div>
+								</div>
+							</div>
+							<div>
+
+							</form>
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /.container -->
+				<!-- /.container -->
 
 
-			<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-			<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
-			<script type="text/javascript" src="./js/form.js"></script>
+				<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+				<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+				<script type="text/javascript" src="./js/form.js"></script>
 
-		</body>
-		</html>
+			</body>
+			</html>

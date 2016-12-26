@@ -32,11 +32,32 @@ section {
   display: block;
 }
 
+legend {
+  border-bottom: 1px dotted #888 !important;
+}
+
+body {
+  background-color: #ccc !important;
+}
+
 .image_wrapper {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  max-width: 350px;
   border: 3px;
   border-radius: 3px;
+}
+
+.captcha > .input-group {
+  width: 201px;
+}
+
+.captcha > img {
+  width: 200px;
+  margin-bottom: 3px;
+}
+
+.captcha > h6 {
+margin: 0 !important;
 }
 
 .input-group-addon {
@@ -55,14 +76,6 @@ section {
   display: !important;
 }
 
-legend {
-  border-bottom: 1px dotted #888 !important;
-}
-
-body {
-  background-color: #eee !important;
-}
-
 .dateContainer .form-control-feedback {
   top: 0;
   right: -15px;
@@ -71,4 +84,9 @@ body {
 .input-group .form-control:first-child {
   border-radius: 5px !important;
   border-radius: 5px !important;
+}
+
+.btn {
+  border: 1.5px outset #ddd !important;
+  margin-top: 10px;
 }
