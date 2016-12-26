@@ -314,7 +314,7 @@
 								<div class="form-group">
 									<label class="col-md-4 control-label">Upload Image: </label>
 									<div class="col-md-7 inputGroupContainer">
-										<div class="input-group">
+										<div class="input-group image_wrapper">
 											<input type='file' onchange="readURL(this);" />
     									<img id="image" src="#" />
 										</div>

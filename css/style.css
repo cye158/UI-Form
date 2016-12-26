@@ -7,6 +7,16 @@
   height: 350px;
 }
 
+img #image {
+  height: 100%;
+  image-rendering: pixelated !important;
+}
+
+#comment {
+  resize: vertical !important;
+  max-height: 300px !important;
+}
+
 article,
 aside,
 figure,
@@ -15,9 +25,14 @@ header,
 hgroup,
 menu,
 nav,
-section { 
-    display: block;
-  }
+section {
+  display: block;
+}
+
+.image_wrapper {
+  height: 200px;
+  width: 200px;
+}
 
 .input-group-addon {
   width: 7% !important;
@@ -41,11 +56,6 @@ legend {
 
 body {
   background-color: #eee !important;
-}
-
-#comment {
-  resize: vertical !important;
-  max-height: 300px !important;
 }
 
 .dateContainer .form-control-feedback {
