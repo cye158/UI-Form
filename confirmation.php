@@ -267,7 +267,7 @@ var address     = street + city + state + zip;
                     <label class="col-md-4 control-label">Additional details: </label>
                     <div class="col-md-7 inputGroupContainer">
                       <div class="input-group">
-                        <textarea disabled class="form-control" disabled value="<?php echo $comment; ?>"></textarea>
+                        <input class="form-control" disabled value="<?php echo $comment; ?>">
                       </div>
                     </div>
                   </div>
