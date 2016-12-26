@@ -40,7 +40,8 @@ $location   = $st_address . $city . $state . $zip;
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 </head>
 <body>
-
+<?php echo $st_address; ?>
+<?php echo $location; ?>
   <!-- container -->
   <div class="container" style="min-width: 350px;">
     <div class="col-md-12">
