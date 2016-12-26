@@ -295,8 +295,11 @@ var address     = street + city + state + zip;
                 <label class="col-md-4 control-label" style="text-align:left;">Terms and Conditions:</label>
                 <div class="col-md-7 inputGroupContainer">
                   <div class="input-group">
-                    <input readonly value="Agreed" id="agree"> I have read and agree to the
-                    <a href="terms.html" target="_blank" style="text-decoration: underline;">Terms and Conditions</a>.
+                    <input type="checkbox" name="terms" id="agree"/> I have read and agree to the
+  									<a href="terms.html" target="_blank" style="text-decoration: underline;">Terms and Conditions</a>.
+                    <script>
+                    $('#agree').prop('checked', true);
+                    </script>
                   </div>
                 </div>
               </div>
