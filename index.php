@@ -31,7 +31,7 @@
 
 			<div class="col-md-12">
 				<hr>
-				<form class="form-horizontal" action="confirmation.html" method="post" id="form">
+				<form class="form-horizontal" action="confirmation.php" method="post" id="form">
 					<!-- Form Name -->
 					<div style="border: 4px solid #666; border-radius: 2px; padding: 7.5px;">
 						<legend style="margin-top: 0px;">Personal Information <i class="glyphicon glyphicon-user"></i></legend>
@@ -68,7 +68,7 @@
 									<div class="col-md-7 selectContainer">
 										<div class="input-group">
 											<select name="gender" class="form-control selectpicker">
-												<option value=" ">Select your gender </option>
+												<option value=" ">Select your gender</option>
 												<option value="Male">Male</option>
 												<option value="Female">Female</option>
 												<option value="Other">Other</option>
@@ -84,8 +84,8 @@
 									<label class="col-md-4 control-label">Education:</label>
 									<div class="col-md-7 selectContainer">
 										<div class="input-group">
-											<select name="gender" class="form-control selectpicker">
-												<option value=" ">Select your Highest Education</option>
+											<select name="education" class="form-control selectpicker">
+												<option value=" ">Select your highest education</option>
 												<option value="GED">General Educational Development(GED)</option>
 												<option value="High School Diploma">High School Diploma</option>
 												<option value="Bachelor's Degree">Bachelor's Degree</option>
@@ -104,7 +104,7 @@
 									<label class="col-md-4 control-label">Phone #:</label>
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group">
-											<input name="phone" placeholder="(555) 555-5555" class="form-control" type="text">
+											<input name="phone" placeholder="(555)555-5555" class="form-control" type="text">
 										</div>
 									</div>
 								</div>
@@ -249,11 +249,11 @@
 							<!-- Issue Type -->
 							<div class="col-md-6">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Category of Issue:</label>
+									<label class="col-md-4 control-label">Problem:</label>
 									<div class="col-md-7 selectContainer">
 										<div class="input-group">
 											<select name="issue_type" class="form-control selectpicker">
-												<option value=" ">Select the issue </option>
+												<option value=" ">Select the problem category</option>
 												<option value="Spillage">Spillage</option>
 												<option value="Broken pipe">Broken pipe</option>
 												<option value="Electric hazard">Electric hazard</option>
@@ -268,10 +268,10 @@
 							<!-- Comment -->
 							<div class="col-md-6">
 								<div class="form-group">
-									<label class="col-md-4 control-label">Additional details: </label>
+									<label class="col-md-4 control-label">Additional Details: </label>
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group">
-											<textarea id="comment" class="form-control" name="comment" placeholder="Enter short summary about the issue (max 200 characters)."  maxlength="200"></textarea>
+											<textarea id="comment" class="form-control" name="comment" placeholder="Enter short summary about the problem (max 200 characters)."  maxlength="200"></textarea>
 										</div>
 									</div>
 								</div>
@@ -283,15 +283,15 @@
 									<label class="col-md-4 control-label">Upload Image: </label>
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group">
-											<input type='file' onchange="readURL(this);" />
-										  <img id="issue_img" style="display: block;"/>
+											<input type="file" onchange="readURL(this);">
+										  <img id="issue_img" style="display: block;">
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</fieldset>
-					<hr>
+					<hr style="margin-top: 5px; margin-bottom: 5px;">
 
 
 					<div class="col-md-6">
@@ -308,17 +308,18 @@
 
 
 					<!-- Clear Button -->
-					<div class="col-md-6">
+					<div class="pull-right">
+					<div class="col-md-6" style="display:inline-block; padding:0px;">
 						<div class="form-group">
 							<label class="col-md-4 control-label"></label>
 							<div class="col-md-6">
-								<button type="reset" class="btn btn-default">Clear Form</button>
+								<button type="reset" class="btn btn-default" id="clear">Clear Form</button>
 							</div>
 						</div>
 					</div>
 
 					<!-- Submit Button -->
-					<div class="col-md-6">
+					<div class="col-md-6" style="display:inline-block; padding:0px;">
 						<div class="form-group">
 							<label class="col-md-4 control-label"></label>
 							<div class="col-md-6">
@@ -326,6 +327,7 @@
 							</div>
 						</div>
 					</div>
+					<div>
 
 				</form>
 			</div>

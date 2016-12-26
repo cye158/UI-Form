@@ -14,7 +14,7 @@ $(document).ready(function() {
             min: 2,
           },
           notEmpty: {
-            message: 'Please enter your first name'
+            message: 'Please enter your first name (eg. John)'
           }
         }
       },
@@ -24,7 +24,7 @@ $(document).ready(function() {
             min: 2,
           },
           notEmpty: {
-            message: 'Please enter your last name'
+            message: 'Please enter your last name (eg. Cena)'
           }
         }
       },
@@ -35,7 +35,7 @@ $(document).ready(function() {
           },
           phone: {
             country: 'US',
-            message: 'Please enter a valid US phone number with area code'
+            message: 'Please enter a valid US phone number with area code (eg. (555)444-3333)'
           }
         }
       },
@@ -45,7 +45,7 @@ $(document).ready(function() {
             message: 'Please enter your email address'
           },
           emailAddress: {
-            message: 'Please enter a valid email address'
+            message: 'Please enter a valid email address (eg. mail@domain.com)'
           }
         }
       },
@@ -55,7 +55,7 @@ $(document).ready(function() {
             min: 8,
           },
           notEmpty: {
-            message: 'Please enter the street address'
+            message: 'Please enter the street address (eg. 1600 Holloway Avenue)'
           }
         }
       },
@@ -65,14 +65,14 @@ $(document).ready(function() {
             min: 4,
           },
           notEmpty: {
-            message: 'Please enter the city'
+            message: 'Please enter the city (eg. San Francisco)'
           }
         }
       },
       state: {
         validators: {
           notEmpty: {
-            message: 'Please select the state'
+            message: 'Please select the state (eg. CA)'
           }
         }
       },
@@ -83,7 +83,7 @@ $(document).ready(function() {
           },
           zipCode: {
             country: 'US',
-            message: 'Please enter a valid zip code'
+            message: 'Please enter a valid zip code (eg. 94132)'
           }
         }
       },
@@ -91,25 +91,14 @@ $(document).ready(function() {
         validators: {
           date: {
             format: 'DD/MM/YYYY',
-            message: 'The value is not a valid date (eg. DD/MM/YYYY)' 
-          }
-        }
-      },
-      phone: {
-        validators: {
-          notEmpty: {
-            message: 'Please enter the day'
-          },
-          phone: {
-            country: 'US',
-            message: 'Please enter '
+            message: 'The value is not a valid date (eg. DD/MM/YYYY)'
           }
         }
       },
       issue_type: {
         validators: {
           notEmpty: {
-            message: 'Please select a category'
+            message: 'Please select a category of the issue (eg. Broken pipe)'
           }
         }
       },
@@ -126,7 +115,7 @@ $(document).ready(function() {
   })
 
 
-  .on('success.form.bv', function(e) {
+  /*.on('success.form.bv', function(e) {
     $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
     $('#form').data('bootstrapValidator').resetForm(true);
 
@@ -144,8 +133,10 @@ $(document).ready(function() {
       console.log(result);
     }, 'json');
 
-    $('#clear').data('bootstrapValidator').resetForm(true);
-  });
+  });*/
 
+    $('#clear').click( function () {
+      $('#form').data('bootstrapValidator').resetForm(true);
+    });
 
 });

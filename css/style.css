@@ -17,7 +17,7 @@
 }
 
 legend {
-    border-bottom: 1px dotted #888 !important;
+  border-bottom: 1px dotted #888 !important;
 }
 
 body {
@@ -30,6 +30,11 @@ body {
 }
 
 .dateContainer .form-control-feedback {
-    top: 0;
-    right: -15px;
+  top: 0;
+  right: -15px;
+}
+
+.input-group .form-control:first-child {
+  border-radius: 5px !important;
+  border-radius: 5px !important;
 }
