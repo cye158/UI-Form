@@ -134,7 +134,7 @@
 									<label class="col-md-4 control-label">Street Address:</label>
 									<div class="col-md-7 inputGroupContainer">
 										<div class="input-group">
-											<input name="st_address" placeholder="Street Address" class="form-control" type="text">
+											<input name="street" placeholder="Street Address" class="form-control" type="text">
 										</div>
 									</div>
 								</div>

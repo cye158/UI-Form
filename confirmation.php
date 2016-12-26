@@ -12,7 +12,7 @@ $zip        = $_POST['zip'];
 $issue_date = $_POST['issue_date'];
 $issue_type = $_POST['issue_type'];
 $comment    = $_POST['comment'];
-$location   = $street . $city . $state . $zip;
+$address   = $street . $city . $state . $zip;
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ $location   = $street . $city . $state . $zip;
 </head>
 <body>
 <?php echo $street; ?>
-<?php echo $location; ?>
+<?php echo $address; ?>
   <!-- container -->
   <div class="container" style="min-width: 350px;">
     <div class="col-md-12">
@@ -194,18 +194,18 @@ $location   = $street . $city . $state . $zip;
                   <div class="col-md-7">
                     <div id="map"></div>
                     <script>
+                    var address = "<?php echo $address; ?>";
                     function initMap() {
                       var map = new google.maps.Map(document.getElementById('map'), {
                         zoom: 14,
                         center: {lat: 37.7219, lng: -122.4782}
                       });
-                      var location = "<?php echo $location; ?>";
                       var geocoder = new google.maps.Geocoder();
-                      geocodeAddress(geocoder, map, location)
+                      geocodeAddress(geocoder, map, address)
                     }
 
-                    function geocodeAddress(geocoder, resultsMap, location) {
-                      geocoder.geocode({'address': location}, function(results, status) {
+                    function geocodeAddress(geocoder, resultsMap, address) {
+                      geocoder.geocode({'address': address}, function(results, status) {
                         if (status === 'OK') {
                           resultsMap.setCenter(results[0].geometry.location);
                           var marker = new google.maps.Marker({
