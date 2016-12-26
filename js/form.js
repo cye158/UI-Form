@@ -91,7 +91,7 @@ $(document).ready(function() {
         validators: {
           date: {
             format: 'DD/MM/YYYY',
-            message: 'The value is not a valid date'
+            message: 'The value is not a valid date (eg. DD/MM/YYYY)' 
           }
         }
       },
@@ -143,23 +143,9 @@ $(document).ready(function() {
     $.post($form.attr('action'), $form.serialize(), function(result) {
       console.log(result);
     }, 'json');
+
+    $('#clear').data('bootstrapValidator').resetForm(true);
   });
 
-  $('#clear').data('bootstrapValidator').resetForm(true);
-
-  $('#issue_img').onchange(function readURL(input) {
-         if (input.files && input.files[0]) {
-             var reader = new FileReader();
-
-             reader.onload = function (e) {
-                 $('#issue_img')
-                     .attr('src', e.target.result)
-                     .width(250)
-                     .height(250);
-             };
-
-             reader.readAsDataURL(input.files[0]);
-         });
-     }
 
 });
