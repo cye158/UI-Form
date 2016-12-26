@@ -191,7 +191,7 @@
                 <div class="form-group">
                   <label class="col-md-4 control-label">Google Maps:</label>
                   <div class="col-md-7 inputGroupContainer">
-                    <div id="map" onload="initLoc(<?php echo $location; ?>)"></div>
+                    <div id="map" onload="initLoc("<?php echo $location; ?>")"></div>
                   </div>
                 </div>
               </div>
