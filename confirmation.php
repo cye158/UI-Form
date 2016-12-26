@@ -57,8 +57,7 @@ var address     = street + city + state + zip;
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 </head>
 <body>
-  <?php echo $street; ?>
-  <?php echo $address; ?>
+<script>document.write(address);</script>
   <!-- container -->
   <div class="container" style="min-width: 350px;">
     <div class="col-md-12">
