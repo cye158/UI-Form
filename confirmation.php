@@ -12,8 +12,25 @@ $zip        = $_POST['zip'];
 $issue_date = $_POST['issue_date'];
 $issue_type = $_POST['issue_type'];
 $comment    = $_POST['comment'];
-$address   = $street . $city . $state . $zip;
 ?>
+
+<script>
+var first_name  = "<?php echo $first_name; ?>";
+var last_name   = "<?php echo $last_name; ?>";
+var gender      = "<?php echo $gender; ?>";
+var education   = "<?php echo $education; ?>";
+var phone       = "<?php echo $phone; ?>";
+var email       = "<?php echo $email; ?>";
+var street      = "<?php echo $street; ?>";
+var city        = "<?php echo $city; ?>";
+var state       = "<?php echo $state; ?>";
+var zip         = "<?php echo $zip; ?>";
+var issue_date  = "<?php echo $issue_date; ?>";
+var issue_type  = "<?php echo $issue_type; ?>";
+var comment     = "<?php echo $comment; ?>";
+
+var address     = street + city + state + zip;
+</script>
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![ENDif]-->
@@ -40,8 +57,8 @@ $address   = $street . $city . $state . $zip;
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 </head>
 <body>
-<?php echo $street; ?>
-<?php echo $address; ?>
+  <?php echo $street; ?>
+  <?php echo $address; ?>
   <!-- container -->
   <div class="container" style="min-width: 350px;">
     <div class="col-md-12">
@@ -194,7 +211,6 @@ $address   = $street . $city . $state . $zip;
                   <div class="col-md-7">
                     <div id="map"></div>
                     <script>
-                    var address = "<?php echo $address; ?>";
                     function initMap() {
                       var map = new google.maps.Map(document.getElementById('map'), {
                         zoom: 14,
