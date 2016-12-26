@@ -78,7 +78,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">First Name:</label>
                   <div class="col-md-7 inputGroupContainer">
                     <div class="input-group">
-                      <input class="form-control" disabled value="<?php echo $first_name; ?>">
+                      <input class="form-control" readonly value="<?php echo $first_name; ?>">
                     </div>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">Last Name:</label>
                   <div class="col-md-7 inputGroupContainer">
                     <div class="input-group">
-                      <input class="form-control" disabled value="<?php echo $last_name; ?>">
+                      <input class="form-control" readonly value="<?php echo $last_name; ?>">
                     </div>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">Gender:</label>
                   <div class="col-md-7 selectContainer">
                     <div class="input-group">
-                      <input class="form-control" disabled value="<?php echo $gender; ?>">
+                      <input class="form-control" readonly value="<?php echo $gender; ?>">
                     </div>
                   </div>
                 </div>
@@ -114,7 +114,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">Education:</label>
                   <div class="col-md-7 selectContainer">
                     <div class="input-group">
-                        <input class="form-control" disabled value="<?php echo $education; ?>">
+                        <input class="form-control" readonly value="<?php echo $education; ?>">
                     </div>
                   </div>
                 </div>
@@ -126,7 +126,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">Phone #:</label>
                   <div class="col-md-7 inputGroupContainer">
                     <div class="input-group">
-                      <input class="form-control" disabled value="<?php echo $phone; ?>">
+                      <input class="form-control" readonly value="<?php echo $phone; ?>">
                     </div>
                   </div>
                 </div>
@@ -138,7 +138,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">E-Mail:</label>
                   <div class="col-md-7 inputGroupContainer">
                     <div class="input-group">
-                      <input class="form-control" disabled value="<?php echo $email; ?>">
+                      <input class="form-control" readonly value="<?php echo $email; ?>">
                     </div>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">Street Address:</label>
                   <div class="col-md-7 inputGroupContainer">
                     <div class="input-group">
-                      <input class="form-control" disabled value="<?php echo $street; ?>">
+                      <input class="form-control" readonly value="<?php echo $street; ?>">
                     </div>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">City:</label>
                   <div class="col-md-7 inputGroupContainer">
                     <div class="input-group">
-                      <input class="form-control" disabled value="<?php echo $city; ?>">
+                      <input class="form-control" readonly value="<?php echo $city; ?>">
                     </div>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">State:</label>
                   <div class="col-md-7 selectContainer">
                     <div class="input-group">
-                        <input class="form-control" disabled value="<?php echo $state; ?>">
+                        <input class="form-control" readonly value="<?php echo $state; ?>">
                     </div>
                   </div>
                 </div>
@@ -192,7 +192,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">Zip Code:</label>
                   <div class="col-md-7 inputGroupContainer">
                     <div class="input-group">
-                      <input class="form-control" disabled value="<?php echo $zip; ?>">
+                      <input class="form-control" readonly value="<?php echo $zip; ?>">
                     </div>
                   </div>
                 </div>
@@ -243,7 +243,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">Date:</label>
                   <div class="col-md-7 inputGroupContainer">
                     <div class="input-group">
-                      <input class="form-control" disabled value="<?php echo $issue_date; ?>">
+                      <input class="form-control" readonly value="<?php echo $issue_date; ?>">
                     </div>
                   </div>
                 </div>
@@ -255,7 +255,7 @@ var address     = street + city + state + zip;
                   <label class="col-md-4 control-label">Category of Issue:</label>
                   <div class="col-md-7 selectContainer">
                     <div class="input-group">
-                      <input class="form-control" disabled value="<?php echo $issue_type; ?>">
+                      <input class="form-control" readonly value="<?php echo $issue_type; ?>">
                       </div>
                     </div>
                   </div>
@@ -267,7 +267,7 @@ var address     = street + city + state + zip;
                     <label class="col-md-4 control-label">Additional details: </label>
                     <div class="col-md-7 inputGroupContainer">
                       <div class="input-group">
-                        <textarea class="form-control" disabled value="<?php echo $comment; ?>"></textarea>
+                        <textarea class="form-control" readonly><?php echo $comment; ?></textarea>
                       </div>
                     </div>
                   </div>
@@ -279,7 +279,7 @@ var address     = street + city + state + zip;
                     <label class="col-md-4 control-label">Upload Image: </label>
                     <div class="col-md-7 inputGroupContainer">
                       <div class="input-group">
-                        <input disabled type="file" onchange="readURL(this);" />
+                        <input readonly type="file" onchange="readURL(this);" />
                         <img id="issue_img" style="display: block;"/>
                       </div>
                     </div>
@@ -295,7 +295,7 @@ var address     = street + city + state + zip;
                 <label class="col-md-4 control-label" style="text-align:left;">Terms and Conditions:</label>
                 <div class="col-md-7 inputGroupContainer">
                   <div class="input-group">
-                    <input disabled value="Agreed" id="agree"> I have read and agree to the
+                    <input readonly value="Agreed" id="agree"> I have read and agree to the
                     <a href="terms.html" target="_blank" style="text-decoration: underline;">Terms and Conditions</a>.
                   </div>
                 </div>
