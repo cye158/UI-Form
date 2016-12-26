@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![ENDif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![ENDif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![ENDif]-->
+<!--[if gt IE 8]><!-->
+
 <?php
 $first_name = $_POST['first_name'];
 $last_name  = $_POST['last_name'];
@@ -32,11 +38,6 @@ var comment     = "<?php echo $comment; ?>";
 var address     = street + city + state + zip;
 </script>
 
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![ENDif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![ENDif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![ENDif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
 <!--<![ENDif]-->
 <head>
