@@ -61,7 +61,7 @@ var address     = street + city + state + zip;
 
 
   <!-- container -->
-  <div class="container" style="min-width: 350px;">
+  <div class="container" style="min-width: 350px; max-width:800px;">
     <div class="col-xs-12">
       <h3 style="font-weight:bolder; font-size:25px; text-align:center;">Please Verify Your Submission</h3>
 
